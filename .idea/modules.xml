@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Onstore.iml" filepath="$PROJECT_DIR$/Onstore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/onlinestore/onlinestore.iml" filepath="$PROJECT_DIR$/onlinestore/onlinestore.iml" />
+    </modules>
+  </component>
+</project>
