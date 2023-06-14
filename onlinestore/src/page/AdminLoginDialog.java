@@ -1,7 +1,10 @@
 package page;
 
+import member.Admin;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class AdminLoginDialog extends JDialog {
     JTextField pwField, idField;
@@ -54,5 +57,28 @@ public class AdminLoginDialog extends JDialog {
         buttonPanel.add(okButton);
 
         JLabel cancleLable = new JLabel("취소");
+        cancleLable.setFont(ft);
+        JButton cancelBtn = new JButton();
+        cancelBtn.add(cancleLable);
+        buttonPanel.add(cancelBtn);
+
+        okButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                Admin admin = new Admin("", -1);
+                System.out.println(pwField.getText() + idField.getText());
+                System.out.println(admin.getId() + admin.getPassword());
+                if (admin.getId().equals(idField.getText()) && admin.getPassword().equals(pwField.getText())) {
+                    isLogin = true;
+                    dispose();
+                } else JOptionPane.showMessageDialog(okButton, "관리자 정보가 일치하지 않습니다");
+            }
+        });
+
+        cancelBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                isLogin = false;
+                dispose();
+            }
+        });
     }
 }

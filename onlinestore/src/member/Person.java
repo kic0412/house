@@ -1,7 +1,5 @@
 package member;
 
-import java.util.Stack;
-
 public class Person {
     private String name;
     private int phone;

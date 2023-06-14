@@ -40,16 +40,16 @@ public class GuestInfoPage extends JPanel {
         phonePanel.add(phoneField);
     }
 
-    public static void main(String[] args) {
-        JFrame frame = new JFrame();
-        frame.setBounds(0, 0, 1000, 750);
-        frame.setLayout(null);
-
-        JPanel mPagePanel = new JPanel();
-        mPagePanel.setBounds(0, 0, 1000, 750);
-
-        frame.add(mPagePanel);
-        mPagePanel.add("", new GuestInfoPage(mPagePanel));
-        frame.setVisible(true);
-    }
+//    public static void main(String[] args) {
+//        JFrame frame = new JFrame();
+//        frame.setBounds(0, 0, 1000, 750);
+//        frame.setLayout(null);
+//
+//        JPanel mPagePanel = new JPanel();
+//        mPagePanel.setBounds(0, 0, 1000, 750);
+//
+//        frame.add(mPagePanel);
+//        mPagePanel.add("", new GuestInfoPage(mPagePanel));
+//        frame.setVisible(true);
+//    }
 }
